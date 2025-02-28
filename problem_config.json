@@ -3,11 +3,14 @@
     "default_params": {
       "instance_file": "instances/Pat1.rcp"
     },
-    "problem_type": "Preemptive Resource Constrained Project Scheduling",
+    "creator": "Rastion",
+    "type": "problem",
+    "problem_name": "Preemptive resource constrained project scheduling",
     "description": "In the preemptive RCPSP (using a pseudo-preemption model), a project consists of tasks that may be split into a fixed maximum number of subtasks. Each task has a given duration and consumes specified amounts of renewable resources while processing. Precedence constraints require that each task finishes before its successors begin. Additionally, at every time unit the total resource consumption of concurrently running tasks must not exceed available capacities. The objective is to minimize the makespan (the maximum finishing time among all tasks).",
+    "link_to_dataset": "https://github.com/Rastion/preemptive_rcp_scheduling/blob/main/instances/Pat1.rcp",
     "keywords": [
       "RCPSP",
-      "scheduling",
+      "production-scheduling",
       "preemption",
       "resource constraints"
     ],
@@ -28,11 +31,8 @@
       "description": "Minimize the project makespan, defined as the maximum finishing time over all tasks. Each task's intervals must sum to its total duration, must be non-overlapping and in order, and all precedence and cumulative resource constraints must be satisfied."
     },
     "solution_representation": "A dictionary with key 'schedule' mapping to a list of task schedules, where each task schedule is a list of intervals (tuples) representing its execution periods.",
-    "compatible_optimizers": [
-      "genetic_algorithm",
-      "simulated_annealing",
-      "particle_swarm",
-      "tabu_search"
+    "formulations": [
+      ""
     ]
   }
   
